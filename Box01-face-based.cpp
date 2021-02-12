@@ -65,21 +65,21 @@ void DumpMeshDataFaceBased()
 		}
 
 		// Dumping Data
-		for (size_t i = 0; i < fNum; i++)
+		for (size_t i = 0; i < fNumLinear; i++)
 			mprintf(L"Vert[%d] = %f %f %f\n", i,
 				vbuff[i].x,
 				vbuff[i].y,
 				vbuff[i].z);
 		mprintf(L"======================\n");
 
-		for (size_t i = 0; i < fNum; i++)
+		for (size_t i = 0; i < fNumLinear; i++)
 			mprintf(L"Normal[%d] = %f %f %f\n", i,
 				nbuff[i].x,
 				nbuff[i].y,
 				nbuff[i].z);
 		mprintf(L"======================\n");
 
-		for (size_t i = 0; i < fNum; i++)
+		for (size_t i = 0; i < fNumLinear; i++)
 			mprintf(L"UV[%d] = %f %f\n", i,
 				uvbuff[i].x, uvbuff[i].y);
 		mprintf(L"======================\n");
